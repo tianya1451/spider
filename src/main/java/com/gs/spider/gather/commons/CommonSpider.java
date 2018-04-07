@@ -826,7 +826,7 @@ public class CommonSpider extends AsyncGather {
             this.site = Site.me().setDomain(info.getDomain()).setTimeOut(info.getTimeout())
                     .setRetryTimes(info.getRetry()).setSleepTime(info.getSleep())
                     .setCharset(StringUtils.isBlank(info.getCharset()) ? null : info.getCharset())
-                    .setUserAgent(info.getUserAgent());
+                    .setUserAgent(info.getUserAgent()).addHeader("cookie", info.getCookie());
             //设置抓取代理IP与接口
             if (StringUtils.isNotBlank(info.getProxyHost()) && info.getProxyPort() > 0) {
                 this.site.setHttpProxy(new HttpHost(info.getProxyHost(), info.getProxyPort()));

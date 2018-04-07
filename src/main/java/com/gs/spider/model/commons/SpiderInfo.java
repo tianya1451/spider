@@ -161,6 +161,16 @@ public class SpiderInfo {
     private int proxyPort;
     private String proxyUsername;
     private String proxyPassword;
+    private String cookie;
+
+    public String getCookie() {
+        return cookie;
+    }
+
+    public SpiderInfo setCookie(String cookie) {
+        this.cookie = cookie;
+        return this;
+    }
 
     public int getThread() {
         return thread;

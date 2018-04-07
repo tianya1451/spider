@@ -541,6 +541,12 @@
                                value="${spiderInfo.proxyPassword}">
                     </div>
                     <div class="form-group">
+                        <label for="proxyPassword">cookie</label>
+                        <input type="text" class="form-control" id="cookie" name="cookie"
+                               placeholder="cookie"
+                               value="${spiderInfo.cookie}">
+                    </div>
+                    <div class="form-group">
                         <div class="checkbox">
                             <label>
                                 <c:if test="${spiderInfo.doNLP}">

@@ -99,6 +99,9 @@
       "country": {
         "type": "keyword"
       },
+      "cookie": {
+        "type": "keyword"
+      },
       "dynamicFields": {
         "type": "nested",
         "properties": {
